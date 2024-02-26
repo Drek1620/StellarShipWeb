@@ -1,0 +1,14 @@
+﻿.nav-bg {
+    background-color: rgb(77, 20, 140);
+}
+
+.Hero {
+    background-image: url(../imagenes/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+.contenido-hero {
+    background-color: rgba(0, 0, 0, .5);
+    height: 450px;
+}
