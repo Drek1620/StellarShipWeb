@@ -6,7 +6,8 @@
     background-image: url(../imagenes/Hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    background-position: center;
+    height: 500px;
 }
 .contenido-hero {
     background-color: rgba(0, 0, 0, .5);
