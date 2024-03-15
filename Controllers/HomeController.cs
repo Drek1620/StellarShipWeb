@@ -18,6 +18,16 @@ namespace StellarShipWeb.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(BusquedaPaquete busquedaPaquete)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(busquedaPaquete);
+            }
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
