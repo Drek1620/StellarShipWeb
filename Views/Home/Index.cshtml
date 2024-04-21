@@ -4,12 +4,42 @@
 
 <section class="Hero ">
     <div class="contenido-hero text-white text-center  row ">
-        <h2 class="align-self-center">Tu paquete, nuestro compromiso.</h2>
-        <form asp-action="Index" class="formulario w-50 form-group">
-            <div class="  text-center row gap-1 gy-sm-0 gy-2 ">
-                <input type="text" id="IdGuia" class="form-control col-sm" />
-                <input type="submit" class="btn btn-primary col-sm-3" value="Rastrear" />
+        <h1 class="align-self-center">Conectando destinos, un paquete a la vez.</h1>
+        <form asp-action="Index" class="formulario form-group">
+            <div class="campos row gap-1 gy-md-0 gy-2">
+                <div class="form-floating col-md text-black p-0 m-0">
+                    <input type="text" id="IdGuia" placeholder="ID DE RASTREO" class="form-control" />
+                    <label>ID DE RASTREO</label>
+                </div>
+                <div class="btn-ID col-md-3 p-0 ">
+                    <input type="submit" class="btn btn-primary" value="RASTREAR" />
+                </div>
+                
             </div>
         </form>      
     </div>   
 </section>
+
+
+
+<div class="container mt-4">
+    <div class="artic pt-5 row">
+        <div class="artic-image col-md-6 p-0">
+            <img class="" src="~/imagenes/img1.jpeg" />
+        </div>
+        <div class="col-md-6 box-text">
+            <div class="artic-title">
+                <h2>Envío de Documentos y Paquetes</h2>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus urna arcu, eu maximus ante volutpat feugiat. Nulla euismod ac enim ac viverra. Phasellus aliquam diam id ipsum  molestie, ac laoreet justo cursus. Aenean euismod lobortis dolor vel ullamcorper. Cras vel convallis orci, sit amet tincidunt mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel volutpat orci.</p>
+            <div class="mt-5 ">
+                <input type="submit" class="btn btn-primary w-100" value="Conocenos"/>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+</div>
