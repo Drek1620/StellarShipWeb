@@ -1,18 +1,19 @@
-﻿@{
+﻿@model BusquedaPaquete
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <section class="Hero ">
     <div class="contenido-hero text-white text-center  row p-0 m-0">
         <h1 class="align-self-center">Conectando destinos, un paquete a la vez.</h1>
-        <form asp-action="Index" class="formulario form-group">
+        <form asp-controller="Home" asp-action="Index" class="formulario form-group">
             <div class="campos row gap-1 gy-md-0 gy-2">
                 <div class="form-floating col-md text-black p-0 m-0">
-                    <input type="text" id="IdGuia" placeholder="ID DE RASTREO" class="form-control" />
+                    <input asp-for="IdGuia" type="text" placeholder="ID DE RASTREO" class="form-control" />
                     <label>ID DE RASTREO</label>
                 </div>
                 <div class="btn-ID col-md-3 p-0 ">
-                    <input type="submit" class="btn btn-primary" value="RASTREAR" />
+                    <input type="submit" asp-controller="Envio" asp-action="Seguimiento_envio" class="btn btn-primary" value="RASTREAR" />
                 </div>
                 
             </div>
