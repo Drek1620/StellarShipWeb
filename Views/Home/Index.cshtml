@@ -11,6 +11,7 @@
                 <div class="form-floating col-md text-black p-0 m-0">
                     <input asp-for="IdGuia" type="text" placeholder="ID DE RASTREO" class="form-control" />
                     <label>ID DE RASTREO</label>
+                    <span asp-validation-for="IdGuia" class="text-danger"></span>
                 </div>
                 <div class="btn-ID col-md-3 p-0 ">
                     <input type="submit" asp-controller="Envio" asp-action="Seguimiento_envio" class="btn btn-primary" value="RASTREAR" />
@@ -56,7 +57,7 @@
 
         </div>
         <div class="artic-image der col-md-6 p-0 ">
-            <img class="img-fluid" src="~/imagenes/img1.jpeg" />
+            <img class="img-fluid" src="~/imagenes/img2.jpg" />
         </div>
 
     </div>

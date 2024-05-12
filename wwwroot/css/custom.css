@@ -46,6 +46,15 @@ h4 {
     height: 500px;
    
 }
+
+.Hero2 {
+    position: relative;
+    background-image: url(../imagenes/Hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
 .contenido-hero {
     background-color: rgba(0, 0, 0, .7);
     justify-content: center;
@@ -180,4 +189,10 @@ h4 {
     height: 40px;
     width: 40px;
     color: white;
+}
+
+.titulo-b {
+    border-bottom: solid;
+    width:auto;
+    height:50px;
 }
