@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 h4 {
@@ -192,7 +192,15 @@ h4 {
 }
 
 .titulo-b {
+    
+    height: 50px;
+    margin: auto;
+
+}
+
+.titulo-b h2 {
+    padding-bottom: 10px;
     border-bottom: solid;
-    width:auto;
-    height:50px;
+    margin: auto;
+    width: 60%;
 }
