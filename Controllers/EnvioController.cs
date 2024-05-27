@@ -1,12 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StellarShipWeb.Models;
+using StellarShipWeb.Servicios;
 
 namespace StellarShipWeb.Controllers
 {
     public class EnvioController : Controller
     {
-        public IActionResult Seguimiento_envio()
+        private readonly IRepositoryIdGuia repositoryIdGuia;
+
+        public EnvioController(IRepositoryIdGuia repositoryIdGuia)
         {
-            return View();
+            this.repositoryIdGuia = repositoryIdGuia;
         }
+
+        
     }
 }

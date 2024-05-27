@@ -1,7 +1,10 @@
+using StellarShipWeb.Servicios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IRepositoryIdGuia, RepositoryIdGuia>();
 
 var app = builder.Build();
 

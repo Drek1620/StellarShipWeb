@@ -9,13 +9,13 @@
         <form asp-controller="Home" asp-action="Index" class="formulario form-group">
             <div class="campos row gap-1 gy-md-0 gy-2">
                 <div class="form-floating col-md text-black p-0 m-0">
-                    <input asp-for="IdGuia" type="text" placeholder="ID DE RASTREO" class="form-control" />
+                    <input asp-for="IdEnvio" type="text" placeholder="ID DE RASTREO" class="form-control" />
                     <label>ID DE RASTREO</label>
-                    <span asp-validation-for="IdGuia" class="text-danger"></span>
                 </div>
                 <div class="btn-ID col-md-3 p-0 ">
-                    <input type="submit" asp-controller="Envio" asp-action="Seguimiento_envio" class="btn btn-primary" value="RASTREAR" />
+                    <button type="submit" class="btn btn-primary">RASTREAR</button>
                 </div>
+                <span asp-validation-for="IdEnvio" class="text-danger"></span>
                 
             </div>
         </form>      
@@ -64,7 +64,7 @@
 
     <div class="artic pt-5 row">
         <div class="artic-image col-md-6 p-0 ">
-            <img class="" src="~/imagenes/img1.jpeg" />
+            <img class="" src="~/imagenes/img3.png" />
         </div>
         <div class="col-md-6 box-text ">
             <div class="artic-title">
@@ -82,3 +82,9 @@
 
     
 </div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
